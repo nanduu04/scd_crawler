@@ -34,10 +34,14 @@ class ScdBot():
         #self.driver.switch_to_window(self.driver.window_handles[1])
         #self.driver.switch_to_window(base_window)
 
-        sleep(8)
-
-        popup_1 = self.driver.find_element_by_xpath('//*[@id="navItem_540532886458224"]/a/div[2]')
+        sleep(3)
+                
+        popup_1 = self.driver.find_element_by_xpath("//a[contains(text(), 'block')]")
         popup_1.click()
+
+
+        popup_2 = self.driver.find_element_by_xpath('//*[@id="navItem_540532886458224"]/a/div[2]')
+        popup_2.click()
 
        # popup_2 = self.driver.find_element_by_xpath('//*[@id="modal-manager"]/div/div/div/div/div[3]/button[1]')
         #popup_2.click()
